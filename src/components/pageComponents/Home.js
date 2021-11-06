@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import FeaturedRooms from '../FeaturedRooms'
 import HeaderPage from '../HeaderPage'
 import HeaderPageBanner from '../HeaderPageBanner'
 import Services from '../Services'
@@ -13,6 +14,7 @@ export default function Home() {
             </HeaderPageBanner>
         </HeaderPage>
         <Services/>
+        <FeaturedRooms/>
         </>
     )
 }

@@ -50,6 +50,7 @@ h4 {
   font-size: 1.2em;
   line-height: 1.25;
   margin-bottom: 1.25em;
+  font-weight: bold;
 }
 h5 {
   font-size: 1em;
@@ -209,6 +210,76 @@ h6 {
 .services p {
   width: 80%;
   margin: 0 auto;
+}
+.loading {
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 3rem;
+}
+.featured-rooms{
+  padding: 2em 0;
+}
+.featured-rooms-center {
+  width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 40px;
+}
+.room {
+  box-shadow: var(--lightShadow);
+  transition: var(--mainTransition);
+}
+.room:hover {
+  box-shadow: var(--darkShadow);
+}
+.img-container {
+  position: relative;
+}
+.img-container img {
+  width: 100%;
+  display: block;
+  transition: var(--mainTransition);
+}
+.price-top{
+  position: absolute;
+  top: 0;
+  color: #fff;
+  background-color: #000;
+  border-bottom-right-radius: 2em;
+  padding: 0.5em;
+}
+.price-top h6, .price-top p{
+  margin: 0.25em .5em;
+}
+.room-link {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: scale(0);
+  transition: all 0.3s linear;
+}
+.img-container:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.img-container:hover img {
+  opacity: 0.3;
+}
+.img-container:hover .price-top {
+  opacity: 0;
+}
+.img-container:hover .room-link {
+  transform: scale(1);
+}
+.room-info{
+  text-align: center;
+  padding: 0.5em;
+  font-size: 1.25em;
+  font-weight: bold;
+  background: var(--darkGrey);
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
 }
 @media screen and (min-width: 768px) {
   .nav-btn {
