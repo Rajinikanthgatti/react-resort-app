@@ -12,7 +12,6 @@ export default class FeaturedRooms extends Component {
             return <Room key={room.id} room={room}></Room>
         })
         //const val = this.context;
-        console.log(rooms);
         return (
             <section className="featured-rooms">
                 <Title title="Featured Rooms" />

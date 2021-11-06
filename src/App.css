@@ -45,6 +45,7 @@ h3 {
   font-size: 1.5em;
   line-height: 1;
   margin-bottom: 1em;
+  font-weight: bold;
 }
 h4 {
   font-size: 1.2em;
@@ -114,7 +115,7 @@ h6 {
 }
 /*NavBar End*/
 .defaultHomePage,
-.roomHeader {
+.roomHeader, .singleRoomHeader {
   min-height: 100%;
   background: url(./images/defaultBcg.jpeg) center/cover no-repeat;
   display: flex;
@@ -122,6 +123,10 @@ h6 {
   justify-content: center;
 }
 .roomHeader{
+  background: url(./images/room-2.jpeg) center/cover no-repeat;
+  min-height: 60%;
+}
+.singleRoomHeader{
   background: url(./images/room-2.jpeg) center/cover no-repeat;
   min-height: 60%;
 }
@@ -280,6 +285,74 @@ h6 {
   background: var(--darkGrey);
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
+}
+.err-msg{
+  padding-top: 2em  ;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+.single-room {
+  padding: 5rem 0 0 0;
+}
+.single-room-images {
+  width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 50px;
+}
+.single-room-images img {
+  width: 100%;
+  display: block;
+}
+.single-room-info {
+  width: 80vw  ;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  margin: 2rem auto;
+  grid-row-gap: 2em;
+  grid-column-gap: 3em;
+  margin: 0 auto;
+}
+.desc,
+.info {
+  margin: 1rem 0;
+}
+.desc h3 {
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
+.desc p {
+  line-height: 1.5;
+}
+.info h3,
+.info h6 {
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
+
+.info h6 {
+  font-weight: 300;
+}
+.room-extras {
+  width: 80vw;
+  margin: 0 auto 3rem auto;
+}
+.room-extras h6 {
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
+.extras {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
 }
 @media screen and (min-width: 768px) {
   .nav-btn {
