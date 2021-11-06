@@ -15,14 +15,53 @@
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
+html{
+  width: 100%;
+  height: 100%;
+}
 body {
   padding-top: 66px;
   color: var(--mainBlack);
   background: var(--mainWhite);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.4;
+  height: 100%;
+  width: 100%;
 }
-
+#root, .App{
+  height: 100%;
+  width: 100%;
+}
+h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.75em;
+}
+h3 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 1em;
+}
+h4 {
+  font-size: 1.2em;
+  line-height: 1.25;
+  margin-bottom: 1.25em;
+}
+h5 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+h6 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+/*NavBar Start*/
 .navbar {
   position: fixed;
   top: 0;
@@ -72,6 +111,105 @@ body {
 .show-nav {
   height: 100px;
 }
+/*NavBar End*/
+.defaultHomePage,
+.roomHeader {
+  min-height: 100%;
+  background: url(./images/defaultBcg.jpeg) center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.roomHeader{
+  background: url(./images/room-2.jpeg) center/cover no-repeat;
+  min-height: 60%;
+}
+.banner {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--mainWhite);
+  padding: 2rem 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
+.banner h1 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+.banner div {
+  width: 10rem;
+  height: 5px;
+  background: var(--primaryColor);
+  margin: 1.7rem auto;
+}
+.banner p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.defaultHomePage .banner,
+.roomHeader .banner{
+  width: 80%;
+}
+.btn-primary {
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainBlack);
+  background: var(--primaryColor);
+  padding: 0.4rem 0.9rem;
+  border: 3px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background: transparent;
+  color: var(--primaryColor);
+  border-color: var(--primaryColor);
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.section-title h4 {
+  font-size: 2rem;
+  letter-spacing: var(--mainSpacing);
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.section-title div {
+  width: 5rem;
+  height: 5px;
+  margin: 0 auto;
+  background: var(--primaryColor);
+}
+.services {
+  padding: 5rem 0;
+  background: var(--darkGrey);
+  text-align: center;
+}
+.services-center {
+  width: 90vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 50px;
+}
+.service span {
+  display: inline-block;
+  color: var(--primaryColor);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.services h6 {
+  letter-spacing: var(--mainSpacing);
+}
+.services p {
+  width: 80%;
+  margin: 0 auto;
+}
 @media screen and (min-width: 768px) {
   .nav-btn {
     display: none;
@@ -88,4 +226,8 @@ body {
     margin: 0 1rem;
     padding: 0.5rem 0;
   }
+  .defaultHomePage .banner,
+.roomHeader .banner{
+  width: 50%;
+}
 }

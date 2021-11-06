@@ -1,10 +1,10 @@
 import './App.css';
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Home from './components/Home';
-import Rooms from './components/Rooms';
-import SingleRoom from './components/SingleRoom';
-import ErrorPage from './components/ErrorPage';
+import Home from './components/pageComponents/Home';
+import Rooms from './components/pageComponents/Rooms';
+import SingleRoom from './components/pageComponents/SingleRoom';
+import ErrorPage from './components/pageComponents/ErrorPage';
 import NavBar from './components/NavBar'
 
 function App() {
