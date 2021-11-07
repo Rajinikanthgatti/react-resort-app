@@ -224,7 +224,8 @@ h6 {
 .featured-rooms{
   padding: 2em 0;
 }
-.featured-rooms-center {
+.featured-rooms-center,
+.roomlist-container {
   width: 80vw;
   margin: 0 auto;
   display: grid;

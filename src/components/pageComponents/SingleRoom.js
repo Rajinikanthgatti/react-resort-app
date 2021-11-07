@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import defaultBcg from '../../images/room-1.jpeg'
-import HeaderPage from '../HeaderPage'
 import HeaderPageBanner from '../HeaderPageBanner'
 import { RoomContext } from '../../context'
 import { Link } from 'react-router-dom'
