@@ -1,5 +1,5 @@
 import React from 'react'
-import { RoomConsumer, withRoomConsumer } from '../context'
+import { withRoomConsumer } from '../context'
 import Loading from './Loading'
 import RoomFilter from './RoomFilter'
 import RoomList from './RoomList'
