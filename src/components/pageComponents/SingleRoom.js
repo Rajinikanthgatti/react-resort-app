@@ -63,7 +63,7 @@ export default class SingleRoom extends Component {
                 <h6>extras </h6>
                 <ul className="extras">
                     {extras.map((item, index) => (
-                    <li key={index}>- {item}</li>
+                    <li key={index}>- {item}</li> 
                     ))}
                 </ul>
             </section>
